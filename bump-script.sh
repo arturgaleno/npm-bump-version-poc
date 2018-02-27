@@ -1,7 +1,7 @@
 #!/bin/bash
 git clone https://www.github.com/arturgaleno/npm-bump-version-poc
 cd npm-bump-version-poc
-npm version minor
+npm version $1
 CURRENT_VERSION=$(npm run version --silent)
 git commit -m "updating version"
 git push origin master
